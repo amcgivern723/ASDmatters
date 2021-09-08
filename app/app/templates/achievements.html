@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <p class="achieve">Achievements for {{ username }}</p>
+    <div class="achieve-container">
+        <div>
+            {% if achievements %}
+                {% for achievement in achievements %}
+                    <div class="achievement-item">
+                        <img src="/img/badge.png" />
+                    <p>{{ achievement.name }}</p>
+                    </div>
+                {% endfor %}
+            {% else %}
+            <p>No Achievements to report!</p>
+            {% endif %}
+        </div>
+         <img class="trophy" src="/img/award1.jpg">
+    </div>
+{% endblock %}

@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <p class="progress-title">Progress report for {{ username }}</p>
+    <div width="100" height="100"><canvas id="myChart"></canvas></div>
+	{% if scores %}
+	<script>
+		var ctx = document.getElementById('myChart').getContext('2d');
+		var scores = {{ scores|safe }};
+		var labels = [];
+		for (var i=0; i<scores.length; i++){
+			labels.push(i);
+		}
+		var myChart = new Chart(ctx, {
+		    type: 'line',
+		    data: {
+		        labels: labels,
+		        datasets: [{
+		            label: 'Previous Scores',
+		            data: scores,
+		            borderWidth: 1,
+		        }]
+		    },
+		    options: {
+		        scales: {
+		            yAxes: [{
+		                ticks: {
+		                    beginAtZero: true
+		                },
+		                scaleLabel: {
+		                    display: true,
+		                    labelString: 'Scores (%)'
+		                }
+		            }],
+		            xAxes: [{
+		                scaleLabel: {
+		                    display: true,
+		                    labelString: 'Attempts'
+		                }
+		            }]
+		        }
+		    }
+		});
+	</script>
+	{% else %}
+	<p>No scores to report!</p>
+	{% endif %}
+{% endblock %}

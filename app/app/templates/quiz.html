@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div id="container2">
+        <div id="start"><p>Start<br>Quiz<br>for<br>{{ username }}</p>
+        </div>
+        <div id="quiz" style="display: none">
+            <div id="question"></div>
+            <div id="qImg"></div>
+            <div id="choices">
+                <div class="choice" id="A" onclick="checkAnswer('A')"></div>
+                <div class="choice" id="B" onclick="checkAnswer('B')"></div>
+                <div class="choice" id="C" onclick="checkAnswer('C')"></div>
+            </div>
+            <div id="scoreContainer" style="display: none"></div>
+            <div id="timer">
+                <div id="counter"></div>
+            </div>
+            <div id="progress"></div>
+        </div>
+        <!-- <div id="scoreContainer" style="display: none"></div> -->
+    </div>
+    <script type="text/javascript">
+        let questions = {{ questions|safe }};
+    </script>
+    <script src="/js/quiz.js"></script>
+{% endblock %}

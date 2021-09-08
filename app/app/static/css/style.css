@@ -1,0 +1,433 @@
+body {
+  font-style: 13px/20px "Comic Sans MS";
+  color: black;
+  margin: 0;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  
+}
+
+.login {
+  padding: 20px 20px 20px;
+  color: black;
+}
+
+.login:before {
+  content: '';
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  bottom: -8px;
+  left: -8px;
+  z-index: -1;
+  background: rgba(0, 0, 0, 0.08);
+  border-radius: 4px;
+}
+
+.login h1 {
+  margin: -20px -20px 21px 0;
+  line-height: 40px;
+  font-size: 15px;
+  font-weight: bold;
+  box-shadow: 0 1px whitesmoke;
+}
+
+.login p:first-child {
+  margin-top: 0;
+}
+
+.login input[type=text], .login input[type=password] {
+  width: 278px;
+}
+
+.login p.remember_me {
+  float: left;
+  line-height: 31px;
+}
+
+.login p.submit {
+  text-align: right;
+}
+
+.login-help {
+  margin: 20px 0;
+  font-size: 15px;
+  color: black;
+}
+
+.login-help a {
+  color: black;
+  text-decoration: none;
+}
+
+.login-help a:hover {
+  text-decoration: underline;
+}
+
+:-moz-placeholder {
+  color: #c9c9c9 !important;
+  font-size: 13px;
+}
+
+::-webkit-input-placeholder {
+  color: #ccc;
+  font-size: 13px;
+}
+
+input {
+  font-family: 'Comic Sans MS';
+  font-size: 14px;
+}
+
+input[type=text], input[type=password] {
+  margin: 20px 0;
+  padding: 0 10px;
+  width: 200px;
+  height: 34px;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  border-color: #7dc9e2;
+  outline-color: #dceefc;
+  outline-offset: 0;
+}
+
+input[type=submit] {
+  width: 300px;
+  padding: 10px 0;
+  background: #f6f608c7;
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+  border: 1px solid;
+  border-color: #f6f608c7;
+}
+
+input[type=submit]:active {
+  background: #cde5ef;
+  border-color: #9eb9c2 #b3c0c8 #b4ccce;
+  -webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.2);
+}
+
+.lt-ie9 input[type=text], .lt-ie9 input[type=password] {
+  line-height: 34px;
+}
+
+#container {
+    margin : 20px auto;
+    background-color: white;
+    height: 600px;
+    width : 800px;
+    border-radius: 5px;
+    box-shadow: 0px 5px 15px 0px;
+    position: relative;
+}
+
+#start {
+    font-size: 1.5em;
+    line-height: 1.5;
+    font-weight: bolder;
+    word-break: break-all;
+    width: 250px;
+    margin: 30px auto;
+    height: 250px;
+    border: 5px solid lightgrey;
+    text-align: center;
+    cursor: pointer;
+    color: black;
+  }
+
+#start p {
+  padding-top: 40px;
+}
+
+#start:hover {
+    border: 3px solid lightseagreen;
+    color : lightseagreen;
+}
+
+#qImg {
+  text-align: center;
+}
+
+#qImg img{
+    max-width: 350px;
+    height: 350px;
+    width: 100%;
+    object-fit:  cover;
+}
+
+#question {
+  text-align: center;
+    padding: 40px 0;
+    font-size: 20px;
+    font-style: "Comic Sans MS";
+}
+
+#question p {
+    margin : 0;
+    padding : 15px;
+    font-size: 1.25em;
+    font-style: "Comic Sans MS";
+}
+
+#choices {
+    display: flex;
+    justify-content: space-around;
+    margin: 40px auto;
+    max-width: 900px;
+}
+
+.choice {
+    display: inline-block;
+    width : 135px;
+    text-align: center;
+    border: 1px solid #0ca3d2;
+    border-radius: 50px;
+    cursor: pointer;
+    padding: 10px;
+    background: #0ca3d2;
+}
+
+.choice:hover {
+    border : 2px solid grey;
+    font-weight: bold;
+}
+
+
+#counter {
+  text-align: center;
+  font-size: 3em;
+}
+
+#progress {
+    width : 500px;
+    margin-left:auto;
+    bottom : 0px;
+    right : 0px;
+    padding:5px;
+    text-align: center;
+}
+
+.prog {
+    width : 25px;
+    height : 25px;
+    border: 1px solid #000;
+    display: inline-block;
+    border-radius: 50%;
+    margin-left : 5px;
+    margin-right : 5px;
+}
+
+#scoreContainer {
+    margin : 20px auto;
+    background-color: white;
+    opacity: 0.8;
+    height: 300px;
+    width : 700px;
+    border-radius: 5px;
+    box-shadow: 0px 5px 15px 0px;
+    position: relative;
+    display: none;
+}
+
+#scoreContainer img {
+    position: absolute;
+    top:100px;
+    left:325px;
+}
+
+#scoreContainer p {
+    position: absolute;
+    display: block;
+    width : 59px;
+    height :59px;
+    top:150px;
+    left:325px;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.login-container {
+  display: flex;
+  justify-content: space-around;
+  max-width: 900px;
+  margin: 40px auto;
+}
+
+.achieve {
+   font-size: 24px;
+   font-style:"Comic Sans MS";
+    font-weight: bold;
+    text-align: center;
+    text-transform: capitalize;
+    margin-top: 10px;
+}
+
+.achieve-container {
+  flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.achieve-container div img {
+  max-width: 180px;
+  width: 100%;
+}
+
+.achieve-container > div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+@media screen and (max-width: 700px){
+.login-container{
+  display: block;
+  margin: 0 auto;
+   max-width: 400px;
+   height: fit-content;
+   padding-bottom: 0;
+   margin-bottom: 0;
+}
+
+.login{
+  padding-bottom: 0;
+  margin-bottom:0;
+}
+
+
+}
+
+/* new styles */
+.custom-nav{
+     background-color: #0ca3d2;
+}
+
+.navbar-light .navbar-nav .nav-link{
+  color: black !important;
+   font-family: 'Comic Sans MS';
+   font-size: 24px !important;
+}
+
+.navbar-brand img{
+  max-width: 90px;
+}
+
+footer{
+  background-color: #0ca3d2;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: auto;
+}
+
+footer p{
+  margin: 0;
+  font-size: 16px;
+}
+
+body h1:last-child{
+    margin-top: auto;
+    margin-bottom: 0;
+}
+
+.chartjs-render-monitor{
+  max-width: 1400px !important;
+  width: 94% !important;
+  margin: 0 auto;
+}
+
+.progress-title{
+  font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: capitalize;
+    margin-top: 10px;
+}
+
+.trophy{
+  max-width: 400px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.achieve-container .achievement-item{
+  margin: 0 2%;
+  text-align: center;
+}
+
+.learningZone-wrapper{
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.learningZone{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.learningZone > div{
+  width: 25%;
+  margin: 20px 4.15%;
+  text-align: center;
+}
+
+.learningZone .box{
+  width: 100%;
+  height: 300px;
+  border: 2px solid black;
+}
+
+.learningZone .box img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.learningZone button{
+  border-radius: 15px;
+  padding: 10px 15px;
+  font-size: 14px;
+  outline: none;
+  margin-top: 8px;
+}
+
+.happyVideo{
+  max-width: 700px;
+  height: 400px;
+  width: 96%;
+  margin: 20px auto 0 auto;
+}
+
+@media screen and (max-width: 950px){
+  .learningZone > div{
+  width: 42%;
+  margin: 20px 4%;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .learningZone > div{
+  width: 90%;
+  margin: 20px 5%;
+  }
+
+  .achieve-container > div {
+  flex-direction: column;
+}
+
+}
+
+
+
+
+

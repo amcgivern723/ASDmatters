@@ -1,0 +1,88 @@
+[
+    {
+        "question" : "What is this Emotion?",
+        "imgSrc" : "img/sad1.jpg",
+        "choiceA" : "Scared",
+        "choiceB" : "Angry",
+        "choiceC" : "Sad",
+        "correct" : "C"
+    },{
+       "question" : "What is this Emotion?",
+        "imgSrc" : "img/scared2.png",
+        "choiceA" : "Scared",
+        "choiceB" : "Happy",
+        "choiceC" : "Excited",
+        "correct" : "A"
+    },{
+       "question" : "What is this Emotion?",
+        "imgSrc" : "img/fear.png",
+        "choiceA" : "Anxious",
+        "choiceB" : "Bored",
+        "choiceC" : "Fear",
+        "correct" : "C"
+    },{ 
+    "question" : "What is this Emotion?",
+        "imgSrc" : "img/surprised1.jpg",
+        "choiceA" : "Surprised",
+        "choiceB" : "Angry",
+        "choiceC" : "Happy",
+        "correct" : "A"
+    }, {
+        "question" : "What is this Emotion?",
+        "imgSrc" : "img/Anxoius.jpg",
+        "choiceA" : "Angry",
+        "choiceB" : "Anxious",
+        "choiceC" : "Disappointed",
+        "correct" : "B"
+    }, {
+        "question" : "What is this Emotion?",
+        "imgSrc" : "img/happyquiz.jpg",
+        "choiceA" : "Happy",
+        "choiceB" : "Excited",
+        "choiceC" : "Contempt",
+        "correct" : "A"
+    },{
+        "question" : "What is this Emotion?",
+        "imgSrc" : "img/board.png",
+        "choiceA" : "Fear",
+        "choiceB" : "Bored",
+        "choiceC" : "Angry",
+        "correct" : "B"
+    },{
+        "question" : "What is this Emotion?",
+        "imgSrc" : "img/angryquiz.jpg",
+        "choiceA" : "Disappointed",
+        "choiceB" : "Fear",
+        "choiceC" : "Angry",
+        "correct" : "C"
+    },{ 
+        "question" : "What is this Emotion?",
+        "imgSrc" : "img/confusedquiz.jpg",
+        "choiceA" : "Confused",
+        "choiceB" : "Sad",
+        "choiceC" : "Anxious",
+        "correct" : "A"
+
+    },{ 
+        "question" : "What is this Emotion?",
+        "imgSrc" : "img/contempt.png",
+        "choiceA" : "Happy",
+        "choiceB" : "Contempt",
+        "choiceC" : "Excited",
+        "correct" : "B"
+    },{
+        "question" : "What is this Emotion?",
+        "imgSrc" : "img/disgust.png",
+        "choiceA" : "Sad",
+        "choiceB" : "Contempt",
+        "choiceC" : "Disgust",
+        "correct" : "C"
+    },{
+        "question" : "What is this Emotion?",
+        "imgSrc" : "img/disappoint.jpg",
+        "choiceA" : "Sad",
+        "choiceB" : "Angry",
+        "choiceC" : "Disappointed",
+        "correct" : "C"
+    }
+]
